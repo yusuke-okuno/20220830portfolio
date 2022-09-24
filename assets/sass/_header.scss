@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+    .header-inner{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+      .site-title {
+        // font-size: 2rem;
+        background-color: aqua;
+      }
+      .nav .nav-menu {
+        background-color:gold;
+        display: flex;
+        justify-content: space-between;
+          li {
+            margin-left: 30px;
+          }
+      }
+    }
+}

@@ -1,0 +1,23 @@
+.first {
+  height: 780px;
+  background-image: url("../img/renga.jpg");
+  background-size:cover;
+  display:flex;
+  align-items: center;
+  // background-color: chocolate;
+    .first-images {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      .images-center {
+        width: 33%;
+      }
+      .images-left {
+        width: 25%;
+      }
+      .images-right {
+        width: 25%;
+      }
+
+    }
+}
