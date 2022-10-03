@@ -5,7 +5,7 @@ html {
 body {
   color: #333;
   font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -21,6 +21,10 @@ li {
   list-style: none;
 }
 
+p {
+  line-height:1.5;
+}
+
 .wrapper {
   max-width: 1040px;
   padding: 0 16px;
@@ -28,10 +32,35 @@ li {
 }
 
 .section-title{
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
+  h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
 }
 
 .section-icon {
-  width:100px;
+  width:7%;
+}
+
+.content-image {
+  width: 50%;
+  border: 20px solid #AF4D1C;
+  border-radius: 10%;
+}
+
+.more-button {
+  display: block;
+  margin: 100px auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color:#fff;
+  background-color:#486609;
+  padding: 24px 48px;
+  border-radius: 60px;
 }

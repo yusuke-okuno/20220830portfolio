@@ -1,4 +1,5 @@
 .header {
+  font-family:'Courier New', Courier, monospace;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -11,11 +12,12 @@
     .header-inner{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       max-width: 1240px;
       width: 100%;
       margin: 0 auto;
       .site-title {
-        // font-size: 2rem;
+        font-size: 2rem;
         background-color: aqua;
       }
       .nav .nav-menu {

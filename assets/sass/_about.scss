@@ -1,4 +1,9 @@
 .about {
-  height: 800px;
+  height: 700px;
   background-color: #fff;
+  .about-content {
+    font-size: 1.3rem;
+    margin: 10vh auto;
+    text-align: center;
+  }
 }

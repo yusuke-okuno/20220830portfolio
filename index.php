@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nokuo.web</title>
-  <!-- <link rel="stylesheet" href="reset.css"> -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/sass/styles.css">
-
-</head>
+<?php get_header(); ?>
 <body>
   <header class="header">
     <div class="header-inner">
@@ -37,28 +27,100 @@
 
     <section class="services">
       <div class="section-title">
-        <p>services</p>
+        <h2>services</h2>
         <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 1.png">
         <p>ご提供できること</p>
       </div>
+
+      <div class="section-content wrapper">
+        <div class="content-item">
+          <h3>webサイト制作</h3>
+          <img class="content-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/soudan.png">
+          <p>
+            丁寧なヒアリングからお好みの<br>
+            デザインを模索・提案させて頂き、<br>
+            お客様の目的に沿うようなLPや<br>
+            コーポレートサイトを制作致します。
+          </p>
+        </div>
+        <div class="content-item">
+          <h3>コーディング</h3>
+          <img class="content-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/typing.png">
+          <p>
+            デザインがお決まりの場合は、<br>
+            頂いたデザインカンプが表現される<br>
+            ように、正確にコーディング致します。
+          </p>
+        </div>
+      </div>
+
+      <button class="more-button" type="button">more</button>
     </section>
 
     <section class="works">
-      
+      <div class="section-title">
+        <h2>works</h2>
+        <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 2.png">
+        <p>制作物</p>
+      </div>
+
+      <ul class="slick-area">
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/40301_s.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1262719_s.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/24534605_s.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/24679524_s.jpg" alt=""></li>
+        <!-- <li><img src="img/pickup1.jpg" alt=""></li> -->
+      </ul>
+
+      <button class="more-button" type="button">more</button>
     </section>
 
     <section class="about">
+      <div class="section-title">
+        <h2>about</h2>
+        <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 3.png">
+        <p>私について</p>
+      </div>
 
+      <p class="about-content">
+        nokuoと申します。<br>
+        関西を拠点に、フリーランスで<br>
+        webサイトの制作を請け負っております。
+      </p>
+
+      <button class="more-button" type="button">more</button>
     </section>
+
   </main>
 
   <footer>
     <section class="contact">
+      <div class="section-title">
+        <h2>contact</h2>
+        <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 4.png">
+        <p>お問い合わせ</p>
+      </div>
 
+      <p class="contact-content">
+        制作のご依頼・ご相談は下記ボタンより移動できる入力フォームから、<br>
+        まずは気軽にお問い合わせ下さい。
+      </p>
+
+      <button class="form-button"type="button">form</button>
     </section>
+
     <section class="footer-bottom">
       <p>&copy; nokuo.web</p>
     </section>
   </footer>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/slick-1.8.1/slick/slick.min.js"></script> -->
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" ingrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/slide.js"></script>
+
 </body>
 </html>

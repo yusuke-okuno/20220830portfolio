@@ -1,5 +1,26 @@
 .services {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background-color: #fff;
+}
+
+.section-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  // align-items: center;
+  text-align: center;
+  .content-item {
+    max-width: 40%;
+    h3 {
+      margin-bottom: 50px;
+      font-size: 2rem;
+      font-weight:bold;
+    }
+    p {
+      margin-top: 50px;
+      font-size: 1.3rem;
+    }
+  }
 }
