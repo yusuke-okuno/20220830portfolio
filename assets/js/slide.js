@@ -7,6 +7,7 @@ $(function(){
     centerMode: true,
     centerPadding: '80px',
     autoplay: true,
+    // fade: true,
     // responsive: [
     //   {
     //     breakpoint: 768,

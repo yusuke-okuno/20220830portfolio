@@ -424,13 +424,18 @@ p {
 }
 
 .section-icon {
-  width: 7%;
+  width: 100px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
 }
 
 .content-image {
-  width: 50%;
+  width: 200px;
   border: 20px solid #AF4D1C;
-  border-radius: 10%;
+  border-radius: 40px;
 }
 
 .more-button {
@@ -442,6 +447,30 @@ p {
   background-color: #486609;
   padding: 24px 48px;
   border-radius: 60px;
+}
+
+.page-first {
+  height: 300px;
+  padding-top: 70px;
+  background-image: url("../img/renga.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-first .page-section-title {
+  text-align: center;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.page-first .page-section-title h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+.page-first .page-section-title p {
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 .header {
@@ -466,10 +495,8 @@ p {
 }
 .header .header-inner .site-title {
   font-size: 2rem;
-  background-color: aqua;
 }
 .header .header-inner .nav .nav-menu {
-  background-color: gold;
   display: flex;
   justify-content: space-between;
 }
@@ -501,7 +528,7 @@ p {
 
 .services {
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   background-color: #fff;
 }
 
@@ -560,17 +587,17 @@ p {
 }
 
 .contact {
-  height: 700px;
+  height: 600px;
   background-color: #f3eae6;
 }
 .contact .contact-content {
   font-size: 1.3rem;
-  margin: 10vh auto;
+  margin: 50px auto;
   text-align: center;
 }
 .contact .form-button {
   display: block;
-  margin: 100px auto;
+  margin: 50px auto;
   font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
   color: #fff;
@@ -594,4 +621,67 @@ p {
   font-size: 2rem;
   padding: 12px 48px;
   border-radius: 60px;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  margin: 50px 0;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.skill-content .official-icons {
+  width: 40%;
+  height: 100px;
+}
+.skill-content .official-icons .official-icon {
+  height: 100px;
+  margin-right: 20px;
+}
+.skill-content p {
+  width: 33%;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.detail-item .detail-item-icon {
+  width: 35%;
+}
+.detail-item .detail-item-icon h4 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+.detail-item p {
+  width: 40%;
+}
+
+.cording-icon {
+  text-align: right;
+}
+
+.about-illustration .about-image {
+  height: 300px;
+  display: block;
+  margin: 50px auto;
+  border-radius: 50%;
+  border: 20px solid #AF4D1C;
+}
+
+.about-content {
+  width: 700px;
+  display: block;
+  margin: 50px auto;
+}
+.about-content p {
+  text-align: center;
+  line-height: 2rem;
 }/*# sourceMappingURL=styles.css.map */

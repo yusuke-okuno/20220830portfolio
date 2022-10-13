@@ -11,5 +11,23 @@
   <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/sass/styles.css"> -->
   <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick/slick.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick/slick-theme.css" media="screen" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <?php wp_head(); ?>
 </head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="site-title">
+          <a href="<?php echo esc_url(home_url('/')); ?>">nokuo.web</a>
+      </h1>
+      <nav class="nav">
+          <ul class="nav-menu">
+            <li><a href='<?php echo esc_url(home_url('/')); ?>/services'>services</a></li>
+            <li><a href='<?php echo esc_url(home_url('/')); ?>/works'>works</a></li>
+            <li><a href='<?php echo esc_url(home_url('/')); ?>/about'>about</a></li>
+            <li><a href='<?php echo esc_url(home_url('/')); ?>/contact'>contact</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>

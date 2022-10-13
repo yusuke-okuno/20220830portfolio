@@ -1,20 +1,4 @@
 <?php get_header(); ?>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <h1 class="site-title">
-          <a>nokuo.web</a>
-      </h1>
-      <nav class="nav">
-          <ul class="nav-menu">
-            <li><a href="#services">services</a></li>
-            <li><a href="#works">works</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-      </nav>
-    </div>
-  </header>
 
   <main>
     <div class="first">
@@ -54,7 +38,7 @@
         </div>
       </div>
 
-      <button class="more-button" type="button">more</button>
+      <button class="more-button" type="button" onclick="location.href='<?php echo esc_url(home_url('/')); ?>/services'">more</button>
     </section>
 
     <section class="works">
@@ -72,7 +56,7 @@
         <!-- <li><img src="img/pickup1.jpg" alt=""></li> -->
       </ul>
 
-      <button class="more-button" type="button">more</button>
+      <button class="more-button" type="button" onclick="location.href='<?php echo esc_url(home_url('/')); ?>/works'">more</button>
     </section>
 
     <section class="about">
@@ -88,39 +72,9 @@
         webサイトの制作を請け負っております。
       </p>
 
-      <button class="more-button" type="button">more</button>
+      <button class="more-button" type="button" onclick="location.href='<?php echo esc_url(home_url('/')); ?>/about'">more</button>
     </section>
 
   </main>
 
-  <footer>
-    <section class="contact">
-      <div class="section-title">
-        <h2>contact</h2>
-        <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 4.png">
-        <p>お問い合わせ</p>
-      </div>
-
-      <p class="contact-content">
-        制作のご依頼・ご相談は下記ボタンより移動できる入力フォームから、<br>
-        まずは気軽にお問い合わせ下さい。
-      </p>
-
-      <button class="form-button"type="button">form</button>
-    </section>
-
-    <section class="footer-bottom">
-      <p>&copy; nokuo.web</p>
-    </section>
-  </footer>
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/slick-1.8.1/slick/slick.min.js"></script> -->
-  
-
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" ingrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/slide.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>

@@ -1,0 +1,44 @@
+h3 {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  margin: 50px 0;
+}
+
+.skill-content {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 30px;
+  .official-icons {
+    width: 40%;
+    height: 100px;
+    .official-icon {
+      height: 100px;
+      margin-right: 20px;
+    }
+  }
+  p {
+    width: 33%;
+  }
+}
+
+.detail-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  .detail-item-icon {
+    width: 35%;
+    h4 {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+  }
+  p {
+    width: 40%;
+  }
+}
+
+.cording-icon {
+  text-align: right;
+}
