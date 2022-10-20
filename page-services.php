@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
   <main>
     <div class="page-first">
       <div class="page-section-title">
@@ -8,6 +10,8 @@
         <p>ご提供できること</p>
       </div>
     </div>
+
+    <?php get_template_part('breadcrumb');?>
 
     <div class="wrapper">
       <h3>skills</h3>

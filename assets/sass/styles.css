@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -650,11 +651,14 @@ h3 {
 .detail-item {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
   align-items: center;
   margin-bottom: 30px;
 }
 .detail-item .detail-item-icon {
   width: 35%;
+  text-align: center;
 }
 .detail-item .detail-item-icon h4 {
   font-size: 1.25rem;
@@ -662,6 +666,7 @@ h3 {
 }
 .detail-item p {
   width: 40%;
+  line-height: 2rem;
 }
 
 .cording-icon {
@@ -669,11 +674,11 @@ h3 {
 }
 
 .about-illustration .about-image {
-  height: 300px;
+  width: 22%;
   display: block;
   margin: 50px auto;
   border-radius: 50%;
-  border: 20px solid #AF4D1C;
+  border: 15px solid #AF4D1C;
 }
 
 .about-content {
@@ -684,4 +689,98 @@ h3 {
 .about-content p {
   text-align: center;
   line-height: 2rem;
+}
+
+.contact-wrapper {
+  max-width: 900px;
+  padding: 0 16px;
+  margin: 100px auto;
+}
+
+.cform tr {
+  margin-bottom: 100px;
+}
+
+.cform th {
+  font-size: 14px;
+  width: 20%; /*変なところで改行される場合はここの数字を変更します。*/
+  border-bottom: solid 1px #d6d6d6;
+  padding: 10px 0 10px 15px;
+  font-weight: normal;
+}
+
+.cform td {
+  font-size: 14px;
+  line-height: 150%;
+  border-bottom: solid 1px #d6d6d6;
+  padding: 10px 5px;
+}
+
+.cform {
+  width: 100%;
+  margin: auto;
+}
+
+.cform [type=submit] {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  background: #ff8f00;
+  color: #FFF;
+  border-bottom: solid 4px #B17C00;
+  border-radius: 3px;
+}
+
+.cform option,
+.cform textarea,
+.cform input[type=text],
+.cform input[type=email],
+.cform input[type=search],
+.cform input[type=url] {
+  width: 100%;
+  background-color: #f3eae6;
+}
+
+.required-srt {
+  font-size: 8pt;
+  padding: 5px;
+  background: #ce0000;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .cform th,
+.cform td {
+    width: 100%;
+    display: block;
+    border-top: none;
+  }
+}
+.submit-btn input {
+  background: #00142c;
+  width: 60%;
+  max-width: 550px;
+  min-width: 220px;
+  margin: 30px auto;
+  display: block;
+  border: 1px #00142c solid;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.submit-btn input:hover {
+  background: #fff;
+  color: #00142c;
+}
+
+.works-content {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */

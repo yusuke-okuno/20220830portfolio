@@ -25,10 +25,12 @@ h3 {
 .detail-item {
   display: flex;
   justify-content: center;
+  column-gap: 80px;
   align-items: center;
   margin-bottom: 30px;
   .detail-item-icon {
     width: 35%;
+    text-align: center;
     h4 {
       font-size: 1.25rem;
       margin-top: 10px;
@@ -36,6 +38,7 @@ h3 {
   }
   p {
     width: 40%;
+    line-height: 2rem;
   }
 }
 
