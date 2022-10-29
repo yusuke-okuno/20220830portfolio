@@ -14,7 +14,7 @@
     <?php get_template_part('breadcrumb');?>
 
     <div class="wrapper">
-      <h3>skills</h3>
+      <h3 class="services-title">skills</h3>
       <section class="skill">
         <div class="skill-content">
           <div class="official-icons">
@@ -47,7 +47,7 @@
         </div>
       </section>
 
-      <h3>details</h3>
+      <h3 class="services-title">details</h3>
       <section class="detail">
         <div class="detail-item">
           <div class="detail-item-icon">

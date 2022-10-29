@@ -5,6 +5,8 @@
 function enqueue_scripts()
 {
     // CSS
+
+    wp_enqueue_style('re-css', get_stylesheet_directory_uri() . '/assets/sass/styles.css', array(), '', 'all');
     wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/sass/styles.css', array(), '', 'all');
 
     // JS

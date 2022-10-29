@@ -624,7 +624,7 @@ p {
   border-radius: 60px;
 }
 
-h3 {
+.services-title {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
   margin: 50px 0;
@@ -682,43 +682,104 @@ h3 {
 }
 
 .about-content {
-  width: 700px;
+  width: 50%;
   display: block;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 .about-content p {
   text-align: center;
   line-height: 2rem;
 }
 
-.contact-wrapper {
-  max-width: 900px;
-  padding: 0 16px;
+.about-question {
+  width: 50%;
+  display: block;
   margin: 100px auto;
 }
-
-.cform tr {
-  margin-bottom: 100px;
+.about-question h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
-.cform th {
-  font-size: 14px;
-  width: 20%; /*変なところで改行される場合はここの数字を変更します。*/
-  border-bottom: solid 1px #d6d6d6;
+/*==================================================
+アコーディオンのためのcss
+===================================*/
+/*アコーディオン全体*/
+.accordion-area {
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.accordion-area li {
+  margin: 10px 0;
+}
+.accordion-area li .area-detail {
+  border: 1px solid #ccc;
+  /*アコーディオンタイトル*/
+  /*アイコンの＋と×*/
+  /*closeというクラスがついたら形状変化*/
+  /*アコーディオンで現れるエリア*/
+}
+.accordion-area li .area-detail .title {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all 0.5s ease;
+}
+.accordion-area li .area-detail .title::before, .accordion-area li .area-detail .title::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+}
+.accordion-area li .area-detail .title::before {
+  top: 48%;
+  left: 15px;
+  transform: rotate(0deg);
+}
+.accordion-area li .area-detail .title::after {
+  top: 48%;
+  left: 15px;
+  transform: rotate(90deg);
+}
+.accordion-area li .area-detail .title.close::before {
+  transform: rotate(45deg);
+}
+.accordion-area li .area-detail .title.close::after {
+  transform: rotate(-45deg);
+}
+.accordion-area li .area-detail .box {
+  display: none; /*はじめは非表示*/
+  background: #f3eae6;
+  margin: 0 3% 3% 3%;
+  padding: 3%;
+}
+
+.contact-wrapper {
+  max-width: 850px;
+  padding: 0 16px;
+  margin: 50px auto 100px;
+}
+.contact-wrapper .cform {
+  width: 80%;
+  margin: auto;
+  border-collapse: unset;
+  border-spacing: 10px 60px;
+}
+.contact-wrapper .cform th {
+  font-size: 16px;
+  width: 30%;
   padding: 10px 0 10px 15px;
   font-weight: normal;
 }
-
-.cform td {
-  font-size: 14px;
+.contact-wrapper .cform td {
+  font-size: 16px;
   line-height: 150%;
-  border-bottom: solid 1px #d6d6d6;
   padding: 10px 5px;
-}
-
-.cform {
-  width: 100%;
-  margin: auto;
 }
 
 .cform [type=submit] {
@@ -743,31 +804,24 @@ h3 {
 }
 
 .required-srt {
-  font-size: 8pt;
+  font-size: 8px;
   padding: 5px;
-  background: #ce0000;
+  background: #8E3E17;
   color: #fff;
-  border-radius: 3px;
-  margin-left: 10px;
+  border-radius: 5px;
+  margin-left: 5%;
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 767px) {
-  .cform th,
-.cform td {
-    width: 100%;
-    display: block;
-    border-top: none;
-  }
-}
 .submit-btn input {
-  background: #00142c;
-  width: 60%;
+  background: #486609;
+  width: 30%;
   max-width: 550px;
   min-width: 220px;
   margin: 30px auto;
+  border: 1px #486609 solid;
+  border-radius: 10px;
   display: block;
-  border: 1px #00142c solid;
   text-align: center;
   padding: 5px;
   color: #fff;
@@ -779,8 +833,43 @@ h3 {
   color: #00142c;
 }
 
+.contact-thanks-content {
+  color: #8E3E17;
+  font-size: 28px;
+  text-align: center;
+  margin: 200px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .cform th,
+.cform td {
+    width: 100%;
+    display: block;
+    border-top: none;
+  }
+}
 .works-content {
   margin: 100px auto;
   display: flex;
   justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.works-content .works-content-image {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.works-content .works-content-description {
+  width: 50%;
+}
+.works-content .works-content-description h3 {
+  background-color: cornflowerblue;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.works-content .works-content-description p {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */

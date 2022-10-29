@@ -1,32 +1,28 @@
 .contact-wrapper {
-  max-width: 900px;
+  max-width: 850px;
   padding: 0 16px;
-  margin: 100px auto;
+  margin: 50px auto 100px;
+	.cform {
+		width: 80%;
+		margin: auto;
+		border-collapse: unset;
+		border-spacing: 10px 60px;
+		th {
+			font-size: 16px;
+			width: 30%; 
+			// border-bottom: solid 1px #d6d6d6;
+			padding: 10px 0 10px 15px;
+			font-weight: normal;
+		}
+		td {
+			font-size: 16px;
+			line-height: 150%;
+			// border-bottom: solid 1px #d6d6d6;
+			padding: 10px 5px;
+		}
+	}
 }
 
-.cform tr {
-  margin-bottom: 100px;
-}
-
-.cform th {
-	font-size: 14px;
-	width: 20%; /*変なところで改行される場合はここの数字を変更します。*/
-	border-bottom: solid 1px #d6d6d6;
-	padding: 10px 0 10px 15px;
-	font-weight: normal;
-}
-
-.cform td {
-	font-size: 14px;
-	line-height: 150%;
-	border-bottom: solid 1px #d6d6d6;
-	padding: 10px 5px;
-}
-
-.cform {
-	width: 100%;
-	margin: auto;
-}
 
 .cform [type=submit] {
 	display: inline-block;
@@ -50,32 +46,24 @@
 }
 
 .required-srt {
-	font-size: 8pt;
+	font-size: 8px;
 	padding: 5px;
-	background: #ce0000;
+	background: #8E3E17;
 	color: #fff;
-	border-radius: 3px;
-	margin-left: 10px;
+	border-radius: 5px;
+	margin-left: 5%;
 	vertical-align: middle;
 }
 
-@media only screen and (max-width:767px) {
-	.cform th,
-	.cform td {
-		width: 100%;
-		display: block;
-		border-top: none;
-	}
-}
-
 .submit-btn input {
-	background: #00142c;
-	width: 60%;
+	background: #486609;
+	width: 30%;
 	max-width: 550px;
 	min-width: 220px;
 	margin: 30px auto;
+	border: 1px #486609 solid;
+	border-radius: 10px;
 	display: block;
-	border: 1px #00142c solid;
 	text-align: center;
 	padding: 5px;
 	color: #fff;
@@ -85,4 +73,20 @@
 .submit-btn input:hover {
 	background: #fff;
 	color: #00142c;
+}
+
+.contact-thanks-content{
+	color: #8E3E17;
+	font-size: 28px;
+	text-align: center;
+	margin: 200px auto;
+}
+
+@media only screen and (max-width:767px) {
+	.cform th,
+	.cform td {
+		width: 100%;
+		display: block;
+		border-top: none;
+	}
 }

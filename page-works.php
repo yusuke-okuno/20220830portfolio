@@ -11,7 +11,8 @@
 
   <?php get_template_part('breadcrumb');?>
 
-  <ul>
+  <ul class="wrapper">
+
   <?php
   // WP_Queryのパラメータを指定
   $args = array(
@@ -31,28 +32,31 @@
     // サブループの投稿データをセット
     $query->the_post();
   ?>
+
       <li>
-      <!-- <a href="<?php the_permalink(); ?>">
-        <h2><?php the_title(); ?></h2>
-      </a> -->
         <article class="works-content">
-          <img src="<?php the_field('thumbnail'); ?>">
-          <div class="">
+          <img class="works-content-image" src="<?php the_field('thumbnail'); ?>">
+          <div class="works-content-description">
+            <h3>概要</h3>
             <p><?php the_field('summary'); ?></p>
-            <p><?php the_field('range'); ?></p>
+            <h3>担当部分</h3>
+            <p><?php the_field('part'); ?></p>
+            <h3>使用スキル</h3>
             <p><?php the_field('skill'); ?></p>
           </div>
         </article>
       </li>
+
   <?php
   endwhile;
   // ループ終了
-
   // メインクエリの投稿データに戻す
   wp_reset_postdata(); 
   ?>
+
   </ul>
 
+  <?php if(function_exists('wp_pagenavi')){wp_pagenavi();} ?>
 
 </main>
 

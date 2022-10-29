@@ -49,11 +49,13 @@
       </div>
 
       <ul class="slick-area">
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/40301_s.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1262719_s.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/24534605_s.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/24679524_s.jpg" alt=""></li>
-        <!-- <li><img src="img/pickup1.jpg" alt=""></li> -->
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <!-- <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/furniture.png" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/travel.png" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sneakers.png" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio2022.png" alt=""></li> -->
+        <li><img class="works-content-image" src="<?php the_field('thumbnail'); ?>"></li>
+        <?php endwhile; endif; ?>
       </ul>
 
       <button class="more-button" type="button" onclick="location.href='<?php echo esc_url(home_url('/')); ?>/works'">more</button>
