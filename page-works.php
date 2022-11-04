@@ -59,7 +59,7 @@
 
 
 <!-- pagenation -->
-<div class="pagenation">
+<!-- <div class="pagenation">
 <?php 
 if ($query->max_num_pages > 1) {
     echo paginate_links(array(
@@ -71,8 +71,10 @@ if ($query->max_num_pages > 1) {
     ));
 }
 wp_reset_postdata();?>
-</div>
+</div> -->
 <!-- /pagenation -->
+
+<?php if(function_exists("wp_pagenavi")) wp_pagenavi(array('query' => $query)); ?>
 
 </main>
 
