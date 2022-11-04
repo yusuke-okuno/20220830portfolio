@@ -29,3 +29,32 @@
     }
   }
 }
+
+// ページネーション
+.wp-pagenavi {
+  margin: 80px;
+	clear: both;
+	text-align:center;
+  a, span {
+    color: #486609;
+    background-color: #FFFFFF;
+    padding: 8px 15px;
+    margin: 0 2px;
+    white-space: nowrap;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: thin dotted #486609;
+  }
+  a:hover{
+    color: #fff;
+    background-color: #486609;
+  }
+  span.current{
+    color: #fff;
+    background-color: #486609;
+  }
+}
