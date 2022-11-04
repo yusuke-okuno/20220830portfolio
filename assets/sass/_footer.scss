@@ -15,6 +15,10 @@
     background-color:#8E3E17;
     padding: 24px 48px;
     border-radius: 60px;
+    transition: all 1s ease;
+  }
+  .form-button:hover{
+    transform: scale(1.2, 1.2);
   }
 }
 

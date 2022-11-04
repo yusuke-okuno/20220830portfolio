@@ -448,6 +448,11 @@ p {
   background-color: #486609;
   padding: 24px 48px;
   border-radius: 60px;
+  transition: all 1s ease;
+}
+
+.more-button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .page-first {
@@ -472,6 +477,36 @@ p {
 .page-first .page-section-title p {
   margin-top: 10px;
   font-size: 1rem;
+}
+
+@-webkit-keyframes my-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes my-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.my-animation {
+  /* my-animationが「my-fade-in」で状態変化するように指定 */
+  -webkit-animation-name: my-fade-in;
+          animation-name: my-fade-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.change-time5 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .header {
@@ -562,16 +597,11 @@ p {
   margin: 100px 0;
   visibility: hidden;
 }
+.works .slick-area li {
+  margin: 20px;
+}
 .works .slick-area li img {
-  width: 400px;
-}
-.works .slick-area .slick-prev {
-  left: 10px;
-  z-index: 1;
-}
-.works .slick-area .slick-next {
-  left: 10px;
-  z-index: 1;
+  max-width: 100%;
 }
 .works .slick-initialized {
   visibility: visible;
@@ -605,6 +635,10 @@ p {
   background-color: #8E3E17;
   padding: 24px 48px;
   border-radius: 60px;
+  transition: all 1s ease;
+}
+.contact .form-button:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .footer-bottom {
@@ -626,8 +660,8 @@ p {
 
 .services-title {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.5rem;
-  margin: 50px 0;
+  font-size: 2rem;
+  margin: 100px 0 30px;
 }
 
 .skill-content {
@@ -676,7 +710,7 @@ p {
 .about-illustration .about-image {
   width: 22%;
   display: block;
-  margin: 50px auto;
+  margin: 100px auto 50px;
   border-radius: 50%;
   border: 15px solid #AF4D1C;
 }
@@ -772,7 +806,7 @@ p {
 }
 .contact-wrapper .cform th {
   font-size: 16px;
-  width: 30%;
+  width: 40%;
   padding: 10px 0 10px 15px;
   font-weight: normal;
 }
@@ -801,6 +835,7 @@ p {
 .cform input[type=url] {
   width: 100%;
   background-color: #f3eae6;
+  padding: 3px;
 }
 
 .required-srt {
@@ -815,12 +850,12 @@ p {
 
 .submit-btn input {
   background: #486609;
-  width: 30%;
-  max-width: 550px;
-  min-width: 220px;
+  width: 25%;
+  max-width: 250px;
+  min-width: 120px;
   margin: 30px auto;
   border: 1px #486609 solid;
-  border-radius: 10px;
+  border-radius: 20px;
   display: block;
   text-align: center;
   padding: 5px;
@@ -855,8 +890,11 @@ p {
   -moz-column-gap: 100px;
        column-gap: 100px;
 }
-.works-content .works-content-image {
+.works-content a {
+  display: block;
   width: 50%;
+}
+.works-content .works-content-image {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -865,7 +903,11 @@ p {
   width: 50%;
 }
 .works-content .works-content-description h3 {
-  background-color: cornflowerblue;
+  display: inline-block;
+  background-color: #8E3E17;
+  color: white;
+  padding: 2px;
+  border-radius: 2px;
   margin-bottom: 10px;
   font-size: 1.5rem;
   line-height: 1;

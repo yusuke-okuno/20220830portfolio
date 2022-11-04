@@ -5,17 +5,22 @@
   .slick-area {
     margin: 100px 0;
     visibility: hidden;
-      li img {
-        width:400px;
+      li {
+        margin: 20px;
+        img{
+          // width:400px;
+        max-width: 100%;
+        }
+        
       }
-      .slick-prev {
-        left: 10px;
-        z-index: 1;
-      }
-      .slick-next {
-        left: 10px;
-        z-index: 1;
-      }
+      // .slick-prev {
+      //   left: 10px;
+      //   z-index: 1;
+      // }
+      // .slick-next {
+      //   left: 10px;
+      //   z-index: 1;
+      // }
     }
   
   .slick-initialized {

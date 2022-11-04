@@ -4,7 +4,7 @@
 
   <main>
     <div class="page-first">
-      <div class="page-section-title">
+      <div class="page-section-title my-animation">
         <h2>services</h2>
         <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 1.png">
         <p>ご提供できること</p>

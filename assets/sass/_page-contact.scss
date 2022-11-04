@@ -9,7 +9,7 @@
 		border-spacing: 10px 60px;
 		th {
 			font-size: 16px;
-			width: 30%; 
+			width: 40%; 
 			// border-bottom: solid 1px #d6d6d6;
 			padding: 10px 0 10px 15px;
 			font-weight: normal;
@@ -43,6 +43,7 @@
 .cform input[type=url] {
 	width: 100%;
   background-color:#f3eae6 ;
+	padding: 3px;
 }
 
 .required-srt {
@@ -57,12 +58,12 @@
 
 .submit-btn input {
 	background: #486609;
-	width: 30%;
-	max-width: 550px;
-	min-width: 220px;
+	width: 25%;
+	max-width: 250px;
+	min-width: 120px;
 	margin: 30px auto;
 	border: 1px #486609 solid;
-	border-radius: 10px;
+	border-radius: 20px;
 	display: block;
 	text-align: center;
 	padding: 5px;

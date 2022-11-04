@@ -68,6 +68,11 @@ p {
   background-color:#486609;
   padding: 24px 48px;
   border-radius: 60px;
+  transition: all 1s ease;
+}
+
+.more-button:hover{
+  transform: scale(1.1, 1.1);
 }
 
 // それぞれのページのヘッダー下の部分
@@ -99,4 +104,24 @@ p {
       font-size: 1rem;
     }
   }
+}
+
+// 以下は単純なアニメーション
+
+@keyframes my-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.my-animation{  
+  /* my-animationが「my-fade-in」で状態変化するように指定 */
+  animation-name:     my-fade-in;
+  animation-duration: 2s;
+}
+
+.change-time5{
+  animation-duration: 5s;
 }

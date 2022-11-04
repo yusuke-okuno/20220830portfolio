@@ -13,19 +13,6 @@
 
   <?php echo do_shortcode('[mwform_formkey key="20"]'); ?>
 
-  <!-- お名前
-
-[mwform_text name="お名前" size="60"]
-
-E-mailアドレス
-
-[mwform_email name="E-mailアドレス" size="60"]
-
-電話番号
-
-[mwform_tel name="電話番号"]
-
-[mwform_submitButton name="確認送信ボタン" confirm_value="確認画面へ" submit_value="送信する"] -->
 
 </main>
 

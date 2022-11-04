@@ -3,16 +3,16 @@
   <main>
     <div class="first">
       <div class="first-images wrapper">
-        <img class="images-left" src="<?php echo get_template_directory_uri(); ?>/assets/img/group46.png">
-        <img class="images-center" src="<?php echo get_template_directory_uri(); ?>/assets/img/group45.png">
-        <img class="images-right" src="<?php echo get_template_directory_uri(); ?>/assets/img/group47.png">
+        <img class="images-left my-animation" src="<?php echo get_template_directory_uri(); ?>/assets/img/group46.png">
+        <img class="images-center my-animation change-time5" src="<?php echo get_template_directory_uri(); ?>/assets/img/group45.png">
+        <img class="images-right my-animation" src="<?php echo get_template_directory_uri(); ?>/assets/img/group47.png">
       </div>
     </div>
 
     <section class="services">
       <div class="section-title">
         <h2>services</h2>
-        <img class="section-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 1.png">
+        <img class="section-icon my-animation" src="<?php echo get_template_directory_uri(); ?>/assets/img/computer_07 1.png">
         <p>ご提供できること</p>
       </div>
 
@@ -50,10 +50,6 @@
 
       <ul class="slick-area">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <!-- <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/furniture.png" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/travel.png" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sneakers.png" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio2022.png" alt=""></li> -->
         <li><img class="works-content-image" src="<?php the_field('thumbnail'); ?>"></li>
         <?php endwhile; endif; ?>
       </ul>
@@ -70,7 +66,7 @@
 
       <p class="about-content">
         nokuoと申します。<br>
-        関西を拠点に、フリーランスで<br>
+        関西を拠点にフリーで<br>
         webサイトの制作を請け負っております。
       </p>
 
