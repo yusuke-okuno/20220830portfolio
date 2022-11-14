@@ -3,21 +3,19 @@
   padding: 0 16px;
   margin: 50px auto 100px;
 	.cform {
-		width: 80%;
+		width: 90%;
 		margin: auto;
 		border-collapse: unset;
 		border-spacing: 10px 60px;
 		th {
 			font-size: 16px;
-			width: 40%; 
-			// border-bottom: solid 1px #d6d6d6;
+			width: 46%; 
 			padding: 10px 0 10px 15px;
 			font-weight: normal;
 		}
 		td {
 			font-size: 16px;
 			line-height: 150%;
-			// border-bottom: solid 1px #d6d6d6;
 			padding: 10px 5px;
 		}
 	}
@@ -78,7 +76,7 @@
 
 .contact-thanks-content{
 	color: #8E3E17;
-	font-size: 28px;
+	font-size: 24px;
 	text-align: center;
 	margin: 200px auto;
 }

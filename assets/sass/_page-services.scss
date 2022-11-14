@@ -1,20 +1,21 @@
 .services-title{
   font-family:'Courier New', Courier, monospace;
   font-size: 2rem;
-  margin: 100px 0 30px;
+  margin: 70px 0 50px;
 }
 
 .skill-content {
   display: flex;
   justify-content:center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   .official-icons {
     width: 40%;
-    height: 100px;
     .official-icon {
       height: 100px;
-      margin-right: 20px;
+    }
+    .official-icon-jquery {
+      width: 150px;
     }
   }
   p {
@@ -27,12 +28,13 @@
   justify-content: center;
   column-gap: 80px;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   .detail-item-icon {
     width: 35%;
     text-align: center;
     h4 {
-      font-size: 1.25rem;
+      font-size: 1.75rem;
+      font-weight: bold;
       margin-top: 10px;
     }
   }
@@ -44,4 +46,37 @@
 
 .cording-icon {
   text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .services-title {
+    text-align: center;
+  }
+  .skill-content {
+    display: block;
+    text-align: center;
+    .official-icons {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    p {
+      width: 50%;
+      margin: 0 auto 30px;
+    }
+  }
+
+  .detail-item {
+    flex-direction:column;
+    margin:30px auto 50px;
+    .detail-item-icon {
+      width: 90%;
+      margin: 0 auto 50px;
+    }
+    p {
+      width: 60%
+    }
+  }
+  .detail-item-reverse {
+    flex-direction: column-reverse;
+  }
 }

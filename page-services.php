@@ -28,6 +28,7 @@
         <div class="skill-content">
           <div class="official-icons">
             <img class="official-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos_javascript.png">
+            <img class="official-icon-jquery" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos_jquery.png">
           </div>
           <p>JavaScript・jQueryを用いて、「ハンバーガーメニュー」や「アコーディオン」等のシンプルな動きを付けられます。</p>
         </div>
@@ -43,7 +44,7 @@
           <div class="official-icons">
             <img class="official-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos_figma.png">
           </div>
-          <p>簡単なデザインを扱う打ち合わせ等においてfigmaを使用します。</p>
+          <p>簡単なデザインを扱う打ち合わせ等においてfigmaを利用します。</p>
         </div>
       </section>
 
@@ -55,13 +56,15 @@
             <h4>webサイト制作</h4>
           </div>
           <p>
-            複数ページに渡る企業のコーポレートサイトや個人のブログサイト、1ページのみで商品の購入や資料請求を動機付けを狙うLPの制作を請け負います。デザインが決まっていない場合には、ヒアリングの中でこちらからもオススメを提案してデザインのイメージを固められるようにお手伝いさせて頂きます。お客様が納得できるまで打ち合わせをさせて頂きますのでご安心下さい。
+            複数ページに渡る企業のコーポレートサイトや個人のブログサイト、1ページのみで商品の購入や資料請求を動機付けを狙うLPの制作を請け負います。<br>
+            デザインが決まっていない場合には、ヒアリングの中でこちらからもオススメを提案してデザインのイメージを固められるようにお手伝いさせて頂きます。お客様が納得できるまで打ち合わせ致しますのでご安心下さい。
           </p>
         </div>
 
-        <div class="detail-item">
+        <div class="detail-item detail-item-reverse">
           <p>
-            頂いたデザインに沿って正確に作成致します。納品後に小さな変更やリニューアルされる際に支障がないように、保守・運用に配慮したコーディングを心掛けます。
+            頂いたデザインに沿って正確に作成致します。<br>
+            納品後に行う小さな変更やリニューアルの際に支障がないように、保守・運用に配慮したコーディングを心掛けます。
           </p>
           <div class="detail-item-icon cording-icon">
             <img class="content-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/typing.png">
@@ -75,7 +78,8 @@
             <h4>WordPress</h4>
           </div>
           <p>
-            お客様ご自身で記事の投稿や編集・更新ができるメリットから、WordPressでの実装を推奨させて頂いています。オリジナルテーマの作成やプラグインの導入によって、納品後の利便性が向上したサイトを構築致します。
+            お客様ご自身で記事の投稿や編集・更新ができるように、WordPressでの実装を推奨させて頂いています。<br>
+            オリジナルテーマの作成やプラグインの導入によって、納品後の利便性が向上したサイトを構築致します。
           </p>
         </div>
       </section>

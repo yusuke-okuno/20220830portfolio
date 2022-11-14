@@ -20,3 +20,19 @@
 
     }
 }
+
+@media screen and (max-width: 768px) {
+  .first{
+    
+    .first-images {
+      display: flex;
+      justify-content: center;
+      .images-center {
+        width: 60%;
+      }
+      .images-left,.images-right{
+        display: none;
+      }
+    }
+  }
+}

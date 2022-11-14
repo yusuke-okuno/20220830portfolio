@@ -1,6 +1,5 @@
 .services {
   width: 100%;
-  height: 1100px;
   background-color: #fff;
 }
 
@@ -9,7 +8,6 @@
   display: flex;
   justify-content: center;
   column-gap: 5%;
-  // align-items: center;
   text-align: center;
   .content-item {
     max-width: 40%;
@@ -25,3 +23,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .section-content {
+    padding-top: 50px;
+    display: block;
+    .content-item {
+      max-width: 90%;
+      margin: 50px auto 100px;
+      p {
+        width: 60%;
+        margin: 50px auto;
+      }
+    }
+  }
+}

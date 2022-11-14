@@ -18,10 +18,10 @@
       margin: 0 auto;
       .site-title {
         font-size: 2rem;
-        // background-color: aqua;
+        position: relative;
+        z-index: 30;
       }
       .nav .nav-menu {
-        // background-color:gold;
         display: flex;
         justify-content: space-between;
           li {
@@ -29,4 +29,100 @@
           }
       }
     }
+}
+
+.toggle_btn {
+  display: none;
+}
+#mask {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+/*ハンバーガーメニュー*/
+  .nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -1500px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 60px 25px;
+    background-color: #AF4D1C;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+    .nav-menu {
+      flex-direction: column;
+      a {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  .header{
+    .open{
+      .site-title {
+        z-index: 15;
+      }
+      .nav {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  
+  }
+
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+    span {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #333;
+      border-radius: 4px;
+      transition: all .5s;
+    }
+    span:nth-child(1) {
+      top: 4px;
+    }
+    span:nth-child(2) {
+      top: 14px;
+    }
+    span:nth-child(3) {
+      bottom: 4px;
+    }
+  }
+  .open .toggle_btn {
+    span {
+      background-color: #fff;
+    }
+    span:nth-child(1) {
+      -webkit-transform: translateY(10px) rotate(-315deg);
+      transform: translateY(10px) rotate(-315deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      -webkit-transform: translateY(-10px) rotate(315deg);
+      transform: translateY(-10px) rotate(315deg);
+    }
+  }
+
 }

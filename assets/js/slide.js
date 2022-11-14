@@ -10,7 +10,7 @@ $(function(){
     // fade: true,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 768,
         settings: {
           centerPadding: '50px',
           slidesToShow: 1

@@ -13,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-// img {
-//   max-width: 100%;
-// }
-
 li {
   list-style: none;
 }
@@ -85,26 +81,21 @@ p {
   justify-content: center;
   align-items: center; 
   .page-section-title {
-    // padding-top: 200px;
     text-align: center;
-    // display: block;
     width: 180px;
     background-color: #fff;
     border-radius: 30px;
-    // margin:30px auto;
     h2 {
       font-family: 'Courier New', Courier, monospace;
       font-size: 2rem;
     }
-    // img {
-    //   width:100px;
-    // }
     p {
       margin-top: 10px;
       font-size: 1rem;
     }
   }
 }
+
 
 // 以下は単純なアニメーション
 

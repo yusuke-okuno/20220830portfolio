@@ -1,17 +1,13 @@
-.about-illustration{
-
-  .about-image {
-    width: 22%;
-    // padding: 10px;
-    display:block;
-    margin: 100px auto 50px;
-    border-radius: 50%;
-    border: 15px solid #AF4D1C;
-  }
+.about-image {
+  width: 300px;
+  display:block;
+  margin: 100px auto 50px;
+  border-radius: 50%;
+  border: 15px solid #AF4D1C;
 }
 
-.about-content {
-  width: 50%;
+.about-content{
+  width: 60%;
   display:block;
   margin: 100px auto;
   p {
@@ -21,16 +17,16 @@
 }
 
 .about-question {
-  width: 50%;
+  width: 60%;
   display:block;
   margin: 100px auto;
   h2 {
-    font-size: 2rem;
     text-align: center;
+    font-size: 2rem;
   }
 }
 
-/*==================================================
+/*==================================
 アコーディオンのためのcss
 ===================================*/
 
@@ -91,7 +87,12 @@
   }
 }
 
-
+@media screen and (max-width: 768px) {
+  .about-image {
+    width: 35%;
+    border: 12px solid #AF4D1C;
+  }
+}
 
 
 

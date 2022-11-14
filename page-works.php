@@ -31,12 +31,8 @@
   $query = new WP_Query( $args );
 
   // ループ開始
-  // while ( $query->have_posts() ) :
-  //   // サブループの投稿データをセット
-  //   $query->the_post();
   if ($query->have_posts()) :?><?php
     while ($query->have_posts()) : $query->the_post();?>
-
 
       <li>
         <article class="works-content">
@@ -51,28 +47,11 @@
           </div>
         </article>
       </li>
-
       
-<?php endwhile;?><?php endif; ?>
+  <?php endwhile;?><?php endif; ?>
   
   </ul>
 
-
-<!-- pagenation -->
-<!-- <div class="pagenation">
-<?php 
-if ($query->max_num_pages > 1) {
-    echo paginate_links(array(
-        'base' => get_pagenum_link(1) . '%_%',
-        'format' => 'page/%#%/',
-        'current' => max(1, $paged),
-        'mid_size' => 1,
-        'total' => $query->max_num_pages
-    ));
-}
-wp_reset_postdata();?>
-</div> -->
-<!-- /pagenation -->
 
 <?php if(function_exists("wp_pagenavi")) wp_pagenavi(array('query' => $query)); ?>
 

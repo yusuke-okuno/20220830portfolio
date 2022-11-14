@@ -21,19 +21,16 @@
           <h3>webサイト制作</h3>
           <img class="content-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/soudan.png">
           <p>
-            丁寧なヒアリングからお好みの<br>
-            デザインを模索・提案させて頂き、<br>
-            お客様の目的に沿うようなLPや<br>
-            コーポレートサイトを制作致します。
+            ヒアリングによってお好みのデザインを模索・提案させて頂き、<br>
+            お客様の目的に沿うようなLPやコーポレートサイトを制作致します。
           </p>
         </div>
         <div class="content-item">
           <h3>コーディング</h3>
           <img class="content-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/typing.png">
           <p>
-            デザインがお決まりの場合は、<br>
-            頂いたデザインカンプが表現される<br>
-            ように、正確にコーディング致します。
+            デザインがお決まりの場合には、<br>
+            頂いたデザインカンプが表現されるように、正確にコーディング致します。
           </p>
         </div>
       </div>
